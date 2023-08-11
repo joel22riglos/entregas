@@ -1,0 +1,207 @@
+/*reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*header*/
+header {
+    height: 100px;
+    background: #4d4d5c;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    color:rgba(255, 0, 0, 0.884);
+    font-weight: 200;
+}
+
+.menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color:rgba(255, 0, 0, 0.884);
+}
+
+#check {
+    display: none;
+}
+
+.foto {
+    background-size: cover;
+    background-position: center;
+}
+/*banner*/
+#banner {
+    padding: 0 50px;
+    background-image: url(../images/banner2.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before {
+    content:'';
+    background: rgba(77,77,92,0.6);
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    left: 0;
+}
+
+.contenido-banner {
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contenido-banner h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px,0px;
+}
+
+.contenido-banner h3 span {
+    font-weight: 600;
+}
+
+.boton-escuchar {
+    text-decoration: none;
+    color: rgb(100, 212, 25);
+    border: 1px solid;
+    padding: 20px 40px;
+    align-self:baseline;
+    transition: all 0.4s;
+}
+
+.boton-escuchar:hover {
+    background:#6cc09070;
+}
+
+.cuerpo {
+    background:rgb(39, 37, 37);
+    color: #fff;
+}
+
+article p {
+    color: #fff;
+}
+
+.andres {
+    background: rgb(39, 37, 37);
+    color: #fff;
+}
+
+.andres {
+    
+    padding: 25px 50px;
+}
+
+.biografia {
+    padding: 10px 0px;
+}
+
+.contacto {
+    background: aquamarine;
+}
+
+.canciones {
+    background:rgb(39, 37, 37);
+    color: #fff;
+}
+
+.image {
+    padding: 100,100;
+    transition: 5s;
+}
+
+.image:hover {
+    transform: rotate(360deg);
+}
+
+.redes {
+    flex-direction: column;
+    font-weight: 600%;
+    width: 100%;
+}
+
+.redes {
+    background: #4fa776ad;
+    color:white
+}
+
+.footer-andres {
+    background: aquamarine;
+}
+
+.footer-contacto {
+    height: 90vh;
+    background: aquamarine;
+}
+
+/*responsive*/
+@media(max-width 768px) {
+    /*header*/
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#4d4d5c;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+}
+
+.menu a {
+    display: block;
+    padding: 20px;
+}
+
+.esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+#check:checked ~ .menu{
+    right: 0;
+}
+
+
+/*# sourceMappingURL=styles.css.map */
